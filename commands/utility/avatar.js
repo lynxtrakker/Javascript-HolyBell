@@ -1,4 +1,4 @@
-
+//This is for when you wanna flex your avatar 
 module.exports = {
 	name: 'avatar',
   aliases: ['icon', 'pfp'],

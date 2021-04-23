@@ -1,3 +1,4 @@
+//This will be for when I want or need to get rid of large amounts of a channel's chat at once
 module.exports = {
 	name: 'prune',
 	description: 'Prune up to 99 messages.',

@@ -1,3 +1,4 @@
+//I use this for when I update a command
 const fs = require('fs');
 
 module.exports = {

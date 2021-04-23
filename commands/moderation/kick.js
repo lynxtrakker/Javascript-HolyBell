@@ -1,3 +1,4 @@
+//This is the kick command for whenever I feel like using it XD
 module.exports = {
   name: 'kick',
   description: 'Kicks a member',

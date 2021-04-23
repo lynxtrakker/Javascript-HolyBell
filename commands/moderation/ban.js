@@ -1,4 +1,4 @@
-//return message.reply('you need to tag a user in order to ban them!');
+//This is the ban command for whenever someone does something unforgivable
 module.exports = {
   name: 'ban',
   description: 'Bans a member',

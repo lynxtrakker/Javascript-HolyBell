@@ -1,4 +1,5 @@
-
+//This command is for when you want to pray to the Holy Bell!!
+//PRAY NOW!!
 module.exports = {
 	name: 'pray',
    cooldown: 10,

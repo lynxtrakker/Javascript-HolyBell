@@ -1,3 +1,4 @@
+//This is the help command for when you want help from a poorly programmed bot
 const { prefix } = require('../../config.json');
 
 module.exports = {

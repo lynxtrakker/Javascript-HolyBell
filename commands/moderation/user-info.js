@@ -1,3 +1,4 @@
+//Used when you wanna see your user information
 module.exports = {
 	name: 'user-info',
 	description: 'Display info about yourself.',
