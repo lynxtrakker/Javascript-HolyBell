@@ -9,10 +9,8 @@
 //   |__|    |__|  |___________|  |__________|   |____| 
 const fs = require('fs');
 const Discord = require('discord.js');
-const config = require('./config.json');
+const { prefix, token } = require('./config.json');
 const { Client, Intents, MessageEmbed } = require('discord.js');
-//This is how you get exact things from config file
-//const { prefix, token } = require('./config.json');
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 client.cooldowns = new Discord.Collection();
@@ -34,9 +32,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
   id = message.id
-  if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+  if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/);
+  const args = message.content.slice(prefix.length).trim().split(/ +/);
   const commandName = args.shift().toLowerCase();
 
   const command = client.commands.get(commandName)
@@ -98,4 +96,4 @@ client.on('message', message => {
   }
 });
 
-client.login(config.token);
+client.login(token);
