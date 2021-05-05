@@ -9,7 +9,7 @@
 //   |__|    |__|  |___________|  |__________|   |____| 
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+const { prefix, token, clientSecret } = require('./config.json');
 const ytdl = require('ytdl-core');
 const { Client, Intents, MessageEmbed } = require('discord.js');
 const client = new Discord.Client();
@@ -35,6 +35,7 @@ for (const folder of commandFolders) {
     client.commands.set(command.name, command);
   }
 }
+
 client.on('message', message => {
   id = message.id
   if (!message.content.startsWith(prefix) || message.author.bot) return;
