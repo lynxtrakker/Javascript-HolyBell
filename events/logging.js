@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 module.exports = {
-  name: 'logging',
+  name: 'message',
   execute(message) {
     const fs = require('fs');
     var logFolder = fs.readdirSync('./logs');
