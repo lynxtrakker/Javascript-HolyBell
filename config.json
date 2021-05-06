@@ -1,7 +1,7 @@
 {
-	"prefix": "$",
-	"token": "your-token-here",
+  "prefix": "$",
+  "token": "your-token-here",
   "clientSecret": "your-client-secret-here",
- 	"webhookID": "your-webhook-id",
+  "webhookID": "your-webhook-id",
   "webhookToken": "your-webhook-token"
 }
